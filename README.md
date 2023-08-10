@@ -1,18 +1,6 @@
 <p align="center" width="100%">
     <img width="60%" align="center" src="https://oceanofanythingofficial.github.io/DevilTwin-NodeMCU/src/Thumbnail.png"/>
 	<br>
-    <div align="center">
-      <img alt="GitHub code size in bytes" src="https://img.shields.io/github/languages/code-size/OCEANOFANYTHINGOFFICIAL/DevilTwin-NodeMCU?style=flat">
-  <img alt="GitHub Repo Version" src="https://img.shields.io/badge/Version-1.0.0.0-brightgreen?style=flat">
-  <img alt="GitHub Repo stars" src="https://img.shields.io/github/stars/OCEANOFANYTHINGOFFICIAL/DevilTwin-NodeMCU?style=social&logoColor=green&color=green">
-  <a target="_blank" href="LICENSE" title="License: MIT"><img src="https://img.shields.io/badge/License-MIT-blue.svg"></a>
-  <a href="https://www.linux.org/" title="Go to Linux homepage"><img src="https://img.shields.io/badge/OS-Linux-blue?logo=linux&logoColor=white" alt="OS - Linux"></a>
-  <a href="https://www.apple.com/macos/" title="Go to Apple homepage"><img src="https://img.shields.io/badge/OS-macOS-blue?logo=apple&logoColor=white" alt="OS - macOS"></a>
-  <a href="https://www.microsoft.com/" title="Go to Microsoft homepage"><img src="https://img.shields.io/badge/OS-Windows-blue?logo=windows&logoColor=white" alt="OS - Windows"></a>
-	<a href="https://oceanofanythingofficial.github.io/DevilTwin-NodeMCU" title="Go to GitHub Pages homepage"><img src="https://img.shields.io/badge/Hosted_with-GitHub_Pages-blue?logo=github&logoColor=white" alt="Hosted with GH Pages"></a>
-	<img  src="https://img.shields.io/badge/maintained-yes-blue"  alt="maintained - yes">
-	<div><a href="https://oceanofanythingofficial.github.io/DevilTwin-NodeMCU/" title="Go to project documentation"><img src="https://img.shields.io/badge/view-Documentation-blue?style=for-the-badge" alt="view - Documentation"></a></div>
-   </div>
 </p>
 
 # DevilTwin NodeMCU
