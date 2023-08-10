@@ -62,11 +62,11 @@ Remember, knowledge is a powerful tool, and responsible use of technology is ess
 
 3. Open the ESP8266 Flasher and select the Node MCU port
 
-<img width="80%" src="https://github.com/JacksVault/NodeMCU-Captive-Portal/raw/main/src/1_port_selection.png">
+<img width="80%" src="https://github.com/JacksVault/DevilTwin-NodeMCU/blob/main/src/1_port_selection.png">
 
 4. Then, go to the config tab and select the .bin file you've just downloaded.
 
-<img width="80%" src="https://github.com/JacksVault/NodeMCU-Captive-Portal/raw/main/src/2_file_selection.png">
+<img width="80%" src="https://github.com/JacksVault/DevilTwin-NodeMCU/blob/main/src/2_file_selection.png">
 
 5. Finally, go back to the first tab and press "Flash"
 
