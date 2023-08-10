@@ -1,5 +1,5 @@
 <p align="center" width="100%">
-    <img width="100%" align="center" src="https://sp-ao.shortpixel.ai/client/q_glossy,ret_img,w_1068,h_706/https://sp-ao.shortpixel.ai/client/q_glossy,ret_img,w_1068/https://s22908.pcdn.co/wp-content/uploads/2022/09/what-is-an-evil-twin-attack-1068x706.jpg"/>
+    <img width="100%" height="60%" align="center" src="https://sp-ao.shortpixel.ai/client/q_glossy,ret_img,w_1068,h_706/https://sp-ao.shortpixel.ai/client/q_glossy,ret_img,w_1068/https://s22908.pcdn.co/wp-content/uploads/2022/09/what-is-an-evil-twin-attack-1068x706.jpg"/>
 	<br>
 </p>
 
