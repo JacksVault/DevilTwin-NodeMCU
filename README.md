@@ -16,20 +16,34 @@
 </p>
 
 # DevilTwin NodeMCU
+**Project Introduction:**
+Welcome to the DevilTwin project, an educational demonstration that replicates the concept of an Evil Twin Attack. Through this project, we showcase how vulnerabilities in the Wi-Fi protocol (specifically WPA/WPA2) can potentially allow unauthorized access to a network. Leveraging the capabilities of the ESP8266 and utilizing the Arduino framework, we create a simple yet effective platform to illustrate how data can be intercepted from a Wi-Fi network.
 
-An evil twin attack is a spoofing cyberattack that works by tricking users into connecting to a fake Wi-Fi access point that mimics a legitimate network. Once a user is connected to an “evil twin” network, hackers can access everything from their network traffic to private login credentials.
+**Project Overview:**
+The DevilTwin project mimics the operation of an Evil Twin Attack, a security exploit where an attacker sets up a rogue wireless access point to impersonate a legitimate network. Clients unknowingly connect to this malicious access point, potentially exposing sensitive information. This project highlights the risks associated with this kind of attack and serves as an educational tool to better understand the implications of Wi-Fi vulnerabilities.
 
-## About This Project
+**Attack Methodology:**
+The project capitalizes on a weakness in the Wi-Fi protocol by continuously de-authenticating clients from a targeted Wi-Fi network. This is achieved through a technique that forces the clients to disconnect from the legitimate access point. Subsequently, when the clients attempt to reconnect, a 4-way handshake is captured, which contains critical information needed for authentication. By analyzing and potentially brute-forcing this handshake, the attacker can potentially obtain the network's password.
 
-Welcome to the project DevilTwin. This Exactly Works like the Evil Twin Attack. This is a simple project to demonstrate how easy it is to capture data from a Wi-Fi network. This project is based on the ESP8266 and uses the Arduino framework. It is able to de-authentificate clients of a given Wi-Fi network continuously. 
+**ESP8266 and Arduino Framework:**
+The ESP8266, a popular Wi-Fi module, is the foundation of this project. Leveraging the Arduino framework, we program the ESP8266 to function as both an access point and a client, allowing us to simulate the attack in a controlled environment. The Arduino framework simplifies the development process and provides an accessible platform for demonstrating complex concepts.
 
-This is possible due to a vulnerability in the Wi-Fi protocol (WPA/WPA2). This attack is performed by forcing the client(s) to de-authenticate themselves from the access point, then capturing the 4-way handshake when attempting to reconnect to the access point.
+**Faking a Firmware Update Page:**
+One unique aspect of the DevilTwin project is its ability to deceive users with a fake firmware update page. When users attempt to connect to the rogue access point, they are presented with a convincing page prompting them to enter the Wi-Fi password. Unbeknownst to them, this input is captured by the malicious device.
 
-After that, the handshake can be brute forced to reveal the password of the access point. This attack is performed on the access point itself, not the clients. It is highly effective on most modern Wi-Fi networks.
+**User Interaction and Feedback:**
+The project manipulates user perception by providing feedback on password attempts. When a user enters a password, whether correct or incorrect, the project responds accordingly. If an incorrect password is entered, the user is informed that the password is incorrect and is redirected to the same page, leading them to believe they made a mistake. This technique increases the likelihood of obtaining the correct password by encouraging users to re-enter it.
 
-You don't even need to brute force the handshake, the NodeMCU Board will act as the access point that you wanted to attack, and will show a fake firmware update page, and when the user enters the password, it will be shown on the admin page of the NodeMCU Board.
+**Admin Page and Data Display:**
+The project features an admin page accessible through the ESP8266's web server. This page displays the captured passwords, revealing the extent of the vulnerability. Even incorrect passwords entered by users are stored and displayed, further demonstrating the efficacy of this social engineering technique.
 
-Even if the user enters the wrong password, it will be shown to the user that a wrong password is entered, and the user will be redirected to the same page again. This will make the user think that the password is wrong, and he will enter the correct password, and the password will be shown on the admin page of the NodeMCU Board.
+**Educational Purpose:**
+It is important to emphasize that the DevilTwin project is designed solely for educational purposes. By replicating the mechanics of an Evil Twin Attack, we aim to raise awareness about Wi-Fi vulnerabilities and promote responsible cybersecurity practices. The project serves as a cautionary example of how easily sensitive data can be compromised if proper security measures are not in place.
+
+**Ethical Considerations:**
+We strongly emphasize that the DevilTwin project should only be used in ethical and legal contexts. Unauthorized access to Wi-Fi networks or any form of malicious intent is strictly prohibited. This project is intended to foster a better understanding of security risks and encourage individuals to prioritize network security and protection.
+
+Remember, knowledge is a powerful tool, and responsible use of technology is essential for a safer digital world.
 
 > Use this tool only on networks that you have permission for.
 
@@ -44,15 +58,15 @@ Even if the user enters the wrong password, it will be shown to the user that a 
 
 1. Download **[ESP8266 Flasher](https://github.com/nodemcu/nodemcu-flasher)**.
 
-2. Download the **[DevilTwin-NodeMCU.ino.bin](https://github.com/OCEANOFANYTHINGOFFICIAL/DevilTwin-NodeMCU/raw/main/DevilTwin-NodeMCU/build/esp8266.esp8266.generic/DevilTwin-NodeMCU.ino.bin)** file.
+2. Download the **[DevilTwin-NodeMCU.ino.bin](https://github.com/JacksVault/DevilTwin-NodeMCU/raw/main/DevilTwin-NodeMCU/build/esp8266.esp8266.generic/DevilTwin-NodeMCU.ino.bin)** file.
 
 3. Open the ESP8266 Flasher and select the Node MCU port
 
-<img width="80%" src="https://github.com/OCEANOFANYTHINGOFFICIAL/NodeMCU-Captive-Portal/raw/main/src/1_port_selection.png">
+<img width="80%" src="https://github.com/JacksVault/NodeMCU-Captive-Portal/raw/main/src/1_port_selection.png">
 
 4. Then, go to the config tab and select the .bin file you've just downloaded.
 
-<img width="80%" src="https://github.com/OCEANOFANYTHINGOFFICIAL/NodeMCU-Captive-Portal/raw/main/src/2_file_selection.png">
+<img width="80%" src="https://github.com/JacksVault/NodeMCU-Captive-Portal/raw/main/src/2_file_selection.png">
 
 5. Finally, go back to the first tab and press "Flash"
 
@@ -69,7 +83,7 @@ Even if the user enters the wrong password, it will be shown to the user that a 
 
 4. Go to "Tools -> Board" and select your board
 
-5. Download and open the sketch "<a href="https://github.com/OCEANOFANYTHINGOFFICIAL/DevilTwin-NodeMCU/blob/main/DevilTwin-NodeMCU/DevilTwin-NodeMCU.ino"><b>DevilTwin-NodeMCU.ino</b></a>"
+5. Download and open the sketch "<a href="https://github.com/JacksVault/DevilTwin-NodeMCU/blob/main/DevilTwin-NodeMCU/DevilTwin-NodeMCU.ino"><b>DevilTwin-NodeMCU.ino</b></a>"
 
 6. You can optionally change some parameters like the SSID name and texts of the page like title, subtitle, text body etc.
 
